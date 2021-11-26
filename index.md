@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## React-note
 
 You can use the [editor on GitHub](https://github.com/VTLUA/react-note/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
