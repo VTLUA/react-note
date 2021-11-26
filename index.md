@@ -69,5 +69,39 @@
 
    console.log(student);
 ```
+> ****纯函数****
+> 
+> 纯函数是始终接受一个或者多个参数并进行计算后返回数据或者函数的函数。它没有副作用，例如设置全局状态，更改应用程序状态，它总是将参数视为不可变数据。
+> 
+> 我想使用 appendAddress 的函数向student对象添加一个地址。 如果使用非纯函数，它没有参数，直接更改 student 对象来更改全局状态。
+> 
+> 使用纯函数，它接受参数，基于参数计算，返回一个新对象而不修改参数
+
+```js
+   let student = {
+        firstName: "testing",
+        lastName: "testing",
+        age: "18"
+   };
+   
+   // 非纯函数
+   function addAddress () {
+        student.address = {streetNumber:"0000", streetName: "first", city:"somecity"};
+   };
+   
+   console.log(addAddress());
+   
+   // 纯函数
+   function addAddress () {
+        let copyStudent = Object.assign({}, student);
+        copyStudent.address = {streetNumber:"0000", streetName: "first", city:"somecity"};
+        retutn copyStudent;
+   }
+   
+   console.log(appendAddress(student));
+
+   console.log(student);
+```
+
 
 
