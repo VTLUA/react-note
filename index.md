@@ -44,6 +44,27 @@
 + 组合
 
 >不可变性
-不可变性意味着不可改变。在函数编程中，你无法更改数据，也不能更改数据。如果要更改数据，则须复制数据副本来进行更改。
+>不可变性意味着不可改变。在函数编程中，你无法更改数据，也不能更改数据。如果要更改数据，则须复制数据副本来进行更改。
+>例如，这是一个student对象和changeName函数，如果要改变学生的名称，则要先复制对象，返回新对象。
+>在JavaScript中，函数参数是对实际数据的引用，你不应该是用student.firstName = "test1"，这会改变实际的student对象，应该使用Object.assign复制返回新对象。
+
+```js
+   let student = {
+        firstName: "testing",
+        lastName: "testing",
+        age: "18"
+   };
+   
+   function changeName (name) {
+        // student.firstName = "testing11" //should not do it
+        let copiedStudent = Object.assign({}, student);
+        copiedStudent.firstName = "testing1";
+        return copiedStudent;
+   };
+   
+   console.log(changeName(student));
+
+   console.log(student);
+```
 
 
