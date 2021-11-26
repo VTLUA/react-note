@@ -5,6 +5,33 @@
 ### 什么是声明式编程
 声明式编程是一种编程范式，它关注的是你要做什么，而不是如何做。它表达逻辑而不显式地定义步骤。这意味着我们需要根据逻辑的计算来声明要显示的组建。他没有描述控制流步骤。声明式编程的例子有HTML/SQL。
 
+```html
+    <div>
+        <p>Declarative Programming</p>
+    </div>
+```
+
+```sql
+   select * from student where firstName = "declarative";
+```
+
+### 声明式编程 VS 命令式编程
+声明式编程的编写方式描述了应该做什么，而命令式编程描述了如何做。在声明式编程中，让编译器决定如何做事情。声明式程序很容易推理，因为本身代码描述了它做什么。
+
+```js
+    const numers = [1,2,3,4,5];
+
+    // 声明式
+    const doubleWithDec = numbers.map(number => number * 2);
+
+    // 命令式编程
+    const doubleWithImp = [];
+    for (let i = 0; i < numbers.length; i++) {
+        const numberDouble = numbers[i] * 2;
+        doubleWithImp.push(numberDouble);
+    }
+```
+
 ```
 Syntax highlighted code block
 
