@@ -33,31 +33,17 @@
         doubleWithImp.push(numberDouble);
     }
 ```
+### 什么是函数式编程
+函数式编程是声明式编程的一部分。JavaScript中的函数是第一公民，这意味着函数是数据，你可以像保存变量一样在应用程序中保存、检索和传递这些函数。
 
-```
-Syntax highlighted code block
+*不可变性
+*纯函数
+*数据转换
+*高阶函数
+*递归
+*组合
 
-# Header 1
-## Header 2
-### Header 3
+>不可变性
+不可变性意味着不可改变。在函数编程中，你无法更改数据，也不能更改数据。如果要更改数据，则须复制数据副本来进行更改。
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/VTLUA/react-note/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
