@@ -6,12 +6,14 @@
 声明式编程是一种编程范式，它关注的是你要做什么，而不是如何做。它表达逻辑而不显式地定义步骤。这意味着我们需要根据逻辑的计算来声明要显示的组建。他没有描述控制流步骤。声明式编程的例子有HTML/SQL。
 
 ```html
+    // html file
     <div>
         <p>Declarative Programming</p>
     </div>
 ```
 
 ```sql
+   // sql file
    select * from student where firstName = "declarative";
 ```
 
